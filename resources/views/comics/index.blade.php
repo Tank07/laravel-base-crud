@@ -10,13 +10,13 @@
 <table class="table">
     <thead>
         <tr>
-            <th scope="col">thumb</th>
-            <th scope="col">title</th>
-            <th scope="col">description</th>
-            <th scope="col">price</th>
-            <th scope="col">series</th>
-            <th scope="col">sale_date</th>
-            <th scope="col">type</th>
+            <th scope="col">Thumb</th>
+            <th scope="col">Title</th>
+            <th scope="col">Description</th>
+            <th scope="col">Price</th>
+            <th scope="col">Series</th>
+            <th scope="col">Sale_date</th>
+            <th scope="col">Type</th>
         </tr>
     </thead>
     <tbody>
@@ -27,13 +27,13 @@
                 <img src="{{ $comic->thumb }}" alt="" width="50px">
             </td>
             <td>
-                {{ $comic->title }}
+               <h5>{{ $comic->title }}</h5> 
             </td>
             <td>
                 {{ $comic->description }}
             </td>
             <td>
-                {{ $comic->price }}
+                {{ $comic->price }}€
             </td>
             <td>
                 {{ $comic->series }}
