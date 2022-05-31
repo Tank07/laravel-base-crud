@@ -5,7 +5,7 @@
 @section('content')
 <h1 class="text-primary text-center">Comics</h1>
 
-{{-- <a href=" {{ route( 'comics.create' ) }} " class="btn btn-success">Crea fumetto</a> --}}
+<a href=" {{ route( 'comics.create' ) }} " class="btn btn-success">Crea fumetto</a>
 
 <table class="table">
     <thead>
@@ -45,7 +45,7 @@
                 {{ $comic->type }}
             </td>
             <td>
-                {{-- <a href=" {{ route( 'comics.show', $comic->id ) }} " class="btn btn-primary">view</a> --}}
+                <a href=" {{ route( 'comics.show', $comic->id ) }} " class="btn btn-primary">view</a>
             </td>
         </tr>
         @empty
