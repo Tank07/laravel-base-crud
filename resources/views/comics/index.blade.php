@@ -45,10 +45,11 @@
                 {{ $comic->type }}
             </td>
             <td>
-                <a href=" {{ route( 'comics.show', $comic->id ) }} " class="btn btn-primary">view</a>
+                <a href=" {{ route( 'comics.show', $comic->id ) }} " class="btn btn-primary">Mostra</a>
+                <a href=" {{ route( 'comics.edit', $comic->id ) }} " class="btn btn-warning">Modifica</a>
             </td>
         </tr>
-        @empty
+        @empty 
         <h2>Il database è vuoto</h2>
         @endforelse
     </tbody>
